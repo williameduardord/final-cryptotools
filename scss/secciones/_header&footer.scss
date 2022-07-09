@@ -1,8 +1,7 @@
-.headerIndex {
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     background-color: #1f2023;
     border-right: 1px solid white;
 
@@ -10,26 +9,96 @@
         padding: 0.5%;
         font-size: 95px;
         letter-spacing: 20px;
-        width: 100%;
+        width: 100vw;
+        text-align: center;
         color: azure;
         font-family: 'Luckiest Guy', cursive;
         animation-name: animacionLogo;
         animation-duration: 10s;
         animation-iteration-count: infinite;
     }
-    @keyframes animacionLogo{
+
+    @keyframes animacionLogo {
         0% {
-            color:  azure;
+            color: azure;
         }
+
         25% {
             color: rgb(240, 87, 138);
         }
 
         50% {
-            color:  azure;
+            color: azure;
         }
 
         75% {
             color: rgb(240, 87, 138);
         }
-}}
+    }
+
+    .menu a {
+        color: azure;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+
+    a.nav-link.active {
+        font-size: 28px;
+        color: rgb(240, 87, 138);
+    }
+
+    .menu a:hover {
+        color: rgb(240, 87, 138);
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1f2023;
+    width: 100%;
+
+    & p{
+        color: azure;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 25px;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    & .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2%;
+    
+  
+        & .mapa{
+            border-radius: 20px;
+            box-shadow: 0 0 10px cornsilk;
+            border-collapse: collapse;
+        }
+.mapa:hover{
+    transform: scale(1.05);
+}
+    }
+    & .redes{
+        display: flex;
+        flex-direction: row;
+        
+        & i{
+            margin: 20px;
+            font-size: 35px;
+           color: azure;
+           padding: 10px;
+           border: 1px azure solid;
+           border-radius: 50%;
+        }
+        i:hover{
+            transform: scale(1.05);
+        }
+    }
+    
+}
