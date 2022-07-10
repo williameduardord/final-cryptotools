@@ -8,8 +8,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #1f2023;
-  border-right: 1px solid white; }
+  background-color: #1f2023; }
   header h1 {
     padding: 0.5%;
     font-size: 95px;
@@ -24,13 +23,17 @@ header {
 
 @keyframes animacionLogo {
   0% {
-    color: azure; }
+    color: azure;
+    text-shadow: 0 0 20px #f0578a; }
   25% {
-    color: #f0578a; }
+    color: #f0578a;
+    text-shadow: none; }
   50% {
-    color: azure; }
+    color: azure;
+    text-shadow: 0 0 20px #f0578a; }
   75% {
-    color: #f0578a; } }
+    color: #f0578a;
+    text-shadow: none; } }
   header .menu a {
     color: azure;
     font-family: 'Luckiest Guy', cursive;
@@ -40,7 +43,10 @@ header {
     font-size: 28px;
     color: #f0578a; }
   header .menu a:hover {
-    color: #f0578a; }
+    text-shadow: 0 0 20px #f0578a;
+    color: azure; }
+  header .navbar-toggler:hover {
+    box-shadow: 0 0 20px #f0578a; }
 
 footer {
   display: flex;
@@ -65,11 +71,14 @@ footer {
       box-shadow: 0 0 10px cornsilk;
       border-collapse: collapse; }
     footer .foot .mapa:hover {
-      transform: scale(1.05); }
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #f0578a; }
   footer .redes {
     display: flex;
     flex-direction: row; }
     footer .redes i {
+      box-shadow: 0 0 10px cornsilk;
+      border-collapse: collapse;
       margin: 20px;
       font-size: 35px;
       color: azure;
@@ -77,7 +86,8 @@ footer {
       border: 1px azure solid;
       border-radius: 50%; }
     footer .redes i:hover {
-      transform: scale(1.05); }
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #f0578a; }
 
 .inicio {
   display: flex;
@@ -99,7 +109,8 @@ footer {
     height: 30vw; }
   .inicio .carta:hover {
     transform: scale(1.05);
-    background: #393b43; }
+    background: #393b43;
+    box-shadow: 0 0 20px #f0578a; }
   .inicio .imginicio {
     width: 400px; }
   .inicio .sec {
@@ -113,3 +124,90 @@ footer {
     font-family: 'Luckiest Guy', cursive; }
   .inicio .sec:hover {
     color: #f0578a; }
+
+.wallets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #27282D;
+  width: 100%; }
+  .wallets h2 {
+    color: azure;
+    font-size: 55px;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    margin: 2% 2% 2% 2%; }
+  .wallets .sec {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+    .wallets .sec .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      font-family: 'Luckiest Guy', cursive;
+      color: azure;
+      letter-spacing: 2px;
+      width: 15vw;
+      margin: 2% 2% 2% 2%;
+      padding: 1%;
+      border-radius: 20px;
+      background-color: #27282D;
+      box-shadow: 0 0 15px cornsilk;
+      border-collapse: collapse; }
+      .wallets .sec .card p {
+        width: 12vw;
+        font-size: 1.1vw; }
+      .wallets .sec .card img {
+        border-radius: 20px;
+        width: 12vw;
+        height: 11vw; }
+      .wallets .sec .card a {
+        text-decoration: none;
+        color: azure;
+        width: 125px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px cornsilk;
+        border-collapse: collapse;
+        padding: 10px; }
+      .wallets .sec .card a:hover {
+        transform: scale(1.05);
+        background: #393b43;
+        box-shadow: 0 0 20px #f0578a; }
+    .wallets .sec .card:hover {
+      transform: scale(1.05);
+      background: #393b43;
+      box-shadow: 0 0 20px #f0578a; }
+
+.exchanges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #27282D; }
+  .exchanges .wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    perspective: 900px; }
+  .exchanges .container {
+    width: 25vw;
+    transform: rotateX(40deg) scale(0.9); }
+  .exchanges img {
+    width: 25vw;
+    box-shadow: 0 0 25px cornsilk;
+    border-radius: 20px; }
+  .exchanges img:hover {
+    box-shadow: 0 0 20px #f0578a; }
+  .exchanges .container:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1.2) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400; }

@@ -3,7 +3,7 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: #1f2023;
-    border-right: 1px solid white;
+    
 
     & h1 {
         padding: 0.5%;
@@ -21,18 +21,22 @@ header {
     @keyframes animacionLogo {
         0% {
             color: azure;
+            text-shadow:  0 0 20px rgb(240, 87, 138);
         }
 
         25% {
             color: rgb(240, 87, 138);
+            text-shadow:  none;
         }
 
         50% {
             color: azure;
+            text-shadow:  0 0 20px rgb(240, 87, 138);
         }
 
         75% {
             color: rgb(240, 87, 138);
+            text-shadow:  none;
         }
     }
 
@@ -46,10 +50,15 @@ header {
     a.nav-link.active {
         font-size: 28px;
         color: rgb(240, 87, 138);
+        
     }
 
     .menu a:hover {
-        color: rgb(240, 87, 138);
+        text-shadow:  0 0 20px rgb(240, 87, 138);
+        color: azure;
+    }
+    .navbar-toggler:hover{
+        box-shadow: 0 0 20px rgb(240, 87, 138);
     }
 }
 
@@ -82,6 +91,7 @@ footer {
         }
 .mapa:hover{
     transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(240, 87, 138);
 }
     }
     & .redes{
@@ -89,6 +99,8 @@ footer {
         flex-direction: row;
         
         & i{
+            box-shadow: 0 0 10px cornsilk;
+            border-collapse: collapse;
             margin: 20px;
             font-size: 35px;
            color: azure;
@@ -98,6 +110,7 @@ footer {
         }
         i:hover{
             transform: scale(1.05);
+            box-shadow: 0 0 10px rgb(240, 87, 138);
         }
     }
     

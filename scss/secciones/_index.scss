@@ -14,7 +14,6 @@
         margin-top: 5%;
         margin-bottom: 5%;
         border-radius: 20px;
-        
         box-shadow: 0 0 25px cornsilk;
         border-collapse: collapse;
         width: 35vw;
@@ -24,6 +23,7 @@
     .carta:hover {
         transform: scale(1.05);
         background: #393b43;
+        box-shadow: 0 0 20px rgb(240, 87, 138);
     }
 
     & .imginicio {
