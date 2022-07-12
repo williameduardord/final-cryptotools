@@ -54,30 +54,41 @@ aside {
   align-items: center;
   width: 100%;
   background-color: #1f2023; }
+  aside .navbar-toggler:hover {
+    box-shadow: 0 0 20px #f0578a; }
   aside .collapse {
     width: 100%; }
+    aside .collapse h2 {
+      width: 100%;
+      padding: 1%;
+      text-align: center;
+      color: azure;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 35px;
+      letter-spacing: 4px; }
     aside .collapse .asideflex {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
       width: 100%; }
-      aside .collapse .asideflex .contenedor p {
-        width: 12vw;
-        padding: 1%;
-        width: 100%;
-        text-align: center;
-        color: azure;
-        font-family: 'Luckiest Guy', cursive;
-        font-size: 20px;
-        letter-spacing: 4px; }
-      aside .collapse .asideflex .contenedor .asidevideo {
-        border-radius: 20px;
-        box-shadow: 0 0 25px cornsilk; }
+      aside .collapse .asideflex .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        aside .collapse .asideflex .contenedor p {
+          width: 20vw;
+          padding: 1%;
+          text-align: center;
+          color: azure;
+          font-family: 'Luckiest Guy', cursive;
+          font-size: 20px;
+          letter-spacing: 4px; }
+        aside .collapse .asideflex .contenedor .asidevideo {
+          border-radius: 20px;
+          box-shadow: 0 0 25px cornsilk; }
       aside .collapse .asideflex .asidevideo:hover {
         transform: scale(1.2);
         box-shadow: 0 0 20px #f0578a; }
-    aside .collapse .navbar-toggler:hover {
-      box-shadow: 0 0 20px #f0578a; }
 
 footer {
   display: flex;
@@ -120,6 +131,41 @@ footer {
       transform: scale(1.05);
       box-shadow: 0 0 10px #f0578a; }
 
+/*********** header para 475px **********/
+@media (max-width: 475px) {
+  header h1 {
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin-top: 10px; }
+  header .collapse .menu {
+    flex-wrap: nowrap; }
+    header .collapse .menu a {
+      font-size: 15px;
+      letter-spacing: 1px;
+      padding: 10px; }
+  /*********** aside para 475px **********/
+  aside .collapse h2 {
+    font-size: 25px;
+    letter-spacing: 3px; }
+  aside .collapse .asideflex {
+    flex-direction: column; }
+    aside .collapse .asideflex .contenedor p {
+      width: 80vw;
+      letter-spacing: 2px;
+      margin-top: 25px; }
+    aside .collapse .asideflex .contenedor .asidevideo {
+      border-radius: 20px;
+      height: 200px; }
+    aside .collapse .asideflex .asidevideo:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 20px #f0578a; }
+  /*********** footer para 475px **********/
+  footer {
+    flex-direction: column; }
+    footer p {
+      margin-top: 20px;
+      font-size: 20px; } }
+
 .inicio {
   display: flex;
   flex-wrap: wrap;
@@ -155,6 +201,24 @@ footer {
     font-family: 'Luckiest Guy', cursive; }
   .inicio .sec:hover {
     color: #f0578a; }
+
+/*********** index para 475px **********/
+@media (max-width: 475px) {
+  .inicio {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .inicio .carta {
+      flex-direction: column;
+      width: 80vw;
+      height: 70vw; }
+    .inicio .imginicio {
+      width: 300px; }
+    .inicio .sec {
+      font-size: 35px;
+      letter-spacing: 5px; }
+    .inicio .sec:hover {
+      color: #f0578a; } }
 
 .wallets {
   display: flex;
@@ -244,7 +308,8 @@ footer {
   .swaps .cards {
     display: flex;
     flex-direction: row;
-    width: 100%; }
+    width: 100%;
+    margin-left: 3%; }
     .swaps .cards .card {
       width: 15vw;
       height: 31vw;

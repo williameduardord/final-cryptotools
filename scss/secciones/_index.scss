@@ -1,5 +1,4 @@
 .inicio {
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -44,4 +43,33 @@
     .sec:hover {
         color: rgb(240, 87, 138);
     }
+}
+
+/*********** index para 475px **********/
+@media (max-width: 475px) {
+    .inicio {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        & .carta {
+            flex-direction: column;
+            width: 80vw;
+            height: 70vw;
+        }
+    
+        & .imginicio {
+            width: 300px;
+        }
+    
+        & .sec {
+            font-size: 35px;
+            letter-spacing: 5px;
+        }
+    
+        .sec:hover {
+            color: rgb(240, 87, 138);
+        }
+    }
+
 }

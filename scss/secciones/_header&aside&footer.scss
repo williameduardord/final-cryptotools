@@ -4,7 +4,6 @@ header {
     align-items: center;
     background-color: #1f2023;
 
-
     & h1 {
         padding: 0.5%;
         font-size: 95px;
@@ -71,8 +70,22 @@ aside {
     width: 100%;
     background-color: #1f2023;
 
+    & .navbar-toggler:hover {
+        box-shadow: 0 0 20px rgb(240, 87, 138);
+    }
+
     & .collapse {
         width: 100%;
+
+        & h2 {
+            width: 100%;
+            padding: 1%;
+            text-align: center;
+            color: azure;
+            font-family: 'Luckiest Guy', cursive;
+            font-size: 35px;
+            letter-spacing: 4px;
+        }
 
         & .asideflex {
             display: flex;
@@ -81,31 +94,35 @@ aside {
             width: 100%;
 
             & .contenedor {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
                 & p {
-                    width: 12vw;
+                    width: 20vw;
                     padding: 1%;
-                    width: 100%;
+
                     text-align: center;
                     color: azure;
                     font-family: 'Luckiest Guy', cursive;
                     font-size: 20px;
-                    letter-spacing: 4px;   
+                    letter-spacing: 4px;
                 }
-                & .asidevideo{
+
+                & .asidevideo {
                     border-radius: 20px;
                     box-shadow: 0 0 25px cornsilk;
                 }
             }
+
             .asidevideo:hover {
                 transform: scale(1.2);
                 box-shadow: 0 0 20px rgb(240, 87, 138);
             }
+
         }
 
-        .navbar-toggler:hover {
-            box-shadow: 0 0 20px rgb(240, 87, 138);
-        }
+
     }
 }
 
@@ -163,6 +180,77 @@ footer {
         i:hover {
             transform: scale(1.05);
             box-shadow: 0 0 10px rgb(240, 87, 138);
+        }
+    }
+
+}
+
+/*********** header para 475px **********/
+@media (max-width: 475px) {
+    header {
+
+        & h1 {
+            font-size: 40px;
+            letter-spacing: 10px;
+            margin-top: 10px;
+        }
+
+        .collapse {
+
+            .menu {
+                flex-wrap: nowrap;
+
+                & a {
+                    font-size: 15px;
+                    letter-spacing: 1px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    /*********** aside para 475px **********/
+    aside {
+
+        & .collapse {
+
+            & h2 {
+                font-size: 25px;
+                letter-spacing: 3px;
+            }
+
+            & .asideflex {
+                flex-direction: column;
+
+                & .contenedor {
+
+                    & p {
+                        width: 80vw;
+                        letter-spacing: 2px;
+                        margin-top: 25px;
+                    }
+
+                    & .asidevideo {
+                        border-radius: 20px;
+                        height: 200px;
+                    }
+                }
+
+                .asidevideo:hover {
+                    transform: scale(1.2);
+                    box-shadow: 0 0 20px rgb(240, 87, 138);
+                }
+            }
+        }
+    }
+
+    /*********** footer para 475px **********/
+    footer {
+        flex-direction: column;
+       
+        & p {
+            margin-top: 20px;
+            font-size: 20px;
         }
     }
 
