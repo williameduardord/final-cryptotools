@@ -3,7 +3,7 @@ header {
     flex-direction: column;
     align-items: center;
     background-color: #1f2023;
-    
+
 
     & h1 {
         padding: 0.5%;
@@ -21,22 +21,22 @@ header {
     @keyframes animacionLogo {
         0% {
             color: azure;
-            text-shadow:  0 0 20px rgb(240, 87, 138);
+            text-shadow: 0 0 20px rgb(240, 87, 138);
         }
 
         25% {
             color: rgb(240, 87, 138);
-            text-shadow:  none;
+            text-shadow: none;
         }
 
         50% {
             color: azure;
-            text-shadow:  0 0 20px rgb(240, 87, 138);
+            text-shadow: 0 0 20px rgb(240, 87, 138);
         }
 
         75% {
             color: rgb(240, 87, 138);
-            text-shadow:  none;
+            text-shadow: none;
         }
     }
 
@@ -50,68 +50,120 @@ header {
     a.nav-link.active {
         font-size: 28px;
         color: rgb(240, 87, 138);
-        
+
     }
 
     .menu a:hover {
-        text-shadow:  0 0 20px rgb(240, 87, 138);
+        text-shadow: 0 0 20px rgb(240, 87, 138);
         color: azure;
     }
-    .navbar-toggler:hover{
+
+    .navbar-toggler:hover {
         box-shadow: 0 0 20px rgb(240, 87, 138);
     }
 }
 
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #1f2023;
+
+    & .collapse {
+        width: 100%;
+
+        & .asideflex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+
+            & .contenedor {
+
+                & p {
+                    width: 12vw;
+                    padding: 1%;
+                    width: 100%;
+                    text-align: center;
+                    color: azure;
+                    font-family: 'Luckiest Guy', cursive;
+                    font-size: 20px;
+                    letter-spacing: 4px;   
+                }
+                & .asidevideo{
+                    border-radius: 20px;
+                    box-shadow: 0 0 25px cornsilk;
+                }
+            }
+            .asidevideo:hover {
+                transform: scale(1.2);
+                box-shadow: 0 0 20px rgb(240, 87, 138);
+            }
+        }
+
+        .navbar-toggler:hover {
+            box-shadow: 0 0 20px rgb(240, 87, 138);
+        }
+    }
+}
+
+
 footer {
     display: flex;
-    flex-direction:row ;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: #1f2023;
     width: 100%;
 
-    & p{
+    & p {
         color: azure;
         font-family: 'Luckiest Guy', cursive;
         font-size: 25px;
         letter-spacing: 3px;
         text-align: center;
     }
-    & .foot{
+
+    & .foot {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 2%;
-    
-  
-        & .mapa{
+
+
+        & .mapa {
             border-radius: 20px;
             box-shadow: 0 0 10px cornsilk;
             border-collapse: collapse;
         }
-.mapa:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgb(240, 87, 138);
-}
+
+        .mapa:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgb(240, 87, 138);
+        }
     }
-    & .redes{
+
+    & .redes {
         display: flex;
         flex-direction: row;
-        
-        & i{
+
+        & i {
             box-shadow: 0 0 10px cornsilk;
             border-collapse: collapse;
             margin: 20px;
             font-size: 35px;
-           color: azure;
-           padding: 10px;
-           border: 1px azure solid;
-           border-radius: 50%;
+            color: azure;
+            padding: 10px;
+            border: 1px azure solid;
+            border-radius: 50%;
         }
-        i:hover{
+
+        i:hover {
             transform: scale(1.05);
             box-shadow: 0 0 10px rgb(240, 87, 138);
         }
     }
-    
+
 }

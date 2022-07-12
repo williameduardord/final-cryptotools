@@ -48,6 +48,37 @@ header {
   header .navbar-toggler:hover {
     box-shadow: 0 0 20px #f0578a; }
 
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #1f2023; }
+  aside .collapse {
+    width: 100%; }
+    aside .collapse .asideflex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%; }
+      aside .collapse .asideflex .contenedor p {
+        width: 12vw;
+        padding: 1%;
+        width: 100%;
+        text-align: center;
+        color: azure;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 20px;
+        letter-spacing: 4px; }
+      aside .collapse .asideflex .contenedor .asidevideo {
+        border-radius: 20px;
+        box-shadow: 0 0 25px cornsilk; }
+      aside .collapse .asideflex .asidevideo:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 20px #f0578a; }
+    aside .collapse .navbar-toggler:hover {
+      box-shadow: 0 0 20px #f0578a; }
+
 footer {
   display: flex;
   flex-direction: row;
@@ -140,48 +171,130 @@ footer {
     margin: 2% 2% 2% 2%; }
   .wallets .sec {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+    .wallets .sec .cards {
+      display: flex;
+      flex-direction: row;
+      width: 100%; }
+      .wallets .sec .cards .card {
+        width: 15vw;
+        height: 25vw;
+        margin: 2% 2% 2% 2%;
+        border-radius: 20px;
+        background-color: #27282D;
+        box-shadow: 0 0 15px cornsilk;
+        border-collapse: collapse; }
+        .wallets .sec .cards .card img {
+          border-radius: 20px;
+          width: 100%;
+          height: 11vw; }
+        .wallets .sec .cards .card .cardBody {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          text-align: center;
+          height: 50%;
+          font-family: 'Luckiest Guy', cursive;
+          color: azure; }
+          .wallets .sec .cards .card .cardBody h5 {
+            margin: 5%;
+            font-size: 18px;
+            letter-spacing: 3px; }
+          .wallets .sec .cards .card .cardBody p {
+            width: 12vw;
+            padding: 1%;
+            font-size: 20px;
+            letter-spacing: 1px; }
+          .wallets .sec .cards .card .cardBody a {
+            text-decoration: none;
+            color: azure;
+            width: 125px;
+            height: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px cornsilk;
+            border-collapse: collapse;
+            padding: 10px; }
+          .wallets .sec .cards .card .cardBody a:hover {
+            transform: scale(1.05);
+            background: #393b43;
+            box-shadow: 0 0 20px #f0578a; }
+      .wallets .sec .cards .card:hover {
+        transform: scale(1.05);
+        background: #393b43;
+        box-shadow: 0 0 20px #f0578a; }
+  .wallets .sec:hover {
+    background: #393b43; }
+
+.swaps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #27282D;
+  width: 100%; }
+  .swaps h2 {
+    color: azure;
+    font-size: 55px;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    margin: 2% 2% 2% 2%; }
+  .swaps .cards {
+    display: flex;
     flex-direction: row;
     width: 100%; }
-    .wallets .sec .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center;
-      font-family: 'Luckiest Guy', cursive;
-      color: azure;
-      letter-spacing: 2px;
+    .swaps .cards .card {
       width: 15vw;
+      height: 31vw;
       margin: 2% 2% 2% 2%;
-      padding: 1%;
       border-radius: 20px;
       background-color: #27282D;
       box-shadow: 0 0 15px cornsilk;
       border-collapse: collapse; }
-      .wallets .sec .card p {
-        width: 12vw;
-        font-size: 1.1vw; }
-      .wallets .sec .card img {
+      .swaps .cards .card img {
         border-radius: 20px;
-        width: 12vw;
-        height: 11vw; }
-      .wallets .sec .card a {
-        text-decoration: none;
-        color: azure;
-        width: 125px;
-        height: 40px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px cornsilk;
-        border-collapse: collapse;
-        padding: 10px; }
-      .wallets .sec .card a:hover {
-        transform: scale(1.05);
-        background: #393b43;
-        box-shadow: 0 0 20px #f0578a; }
-    .wallets .sec .card:hover {
+        width: 100%;
+        height: 50%; }
+      .swaps .cards .card .cardBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        height: 50%;
+        font-family: 'Luckiest Guy', cursive;
+        color: azure; }
+        .swaps .cards .card .cardBody h5 {
+          margin: 5%;
+          font-size: 18px;
+          letter-spacing: 3px; }
+        .swaps .cards .card .cardBody p {
+          width: 12vw;
+          padding: 1%;
+          font-size: 20px;
+          letter-spacing: 4px; }
+        .swaps .cards .card .cardBody a {
+          text-decoration: none;
+          color: azure;
+          width: 125px;
+          height: 40px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px cornsilk;
+          border-collapse: collapse;
+          padding: 10px;
+          letter-spacing: 2px; }
+        .swaps .cards .card .cardBody a:hover {
+          transform: scale(1.05);
+          background: #393b43;
+          box-shadow: 0 0 20px #f0578a; }
+    .swaps .cards .card:hover {
       transform: scale(1.05);
       background: #393b43;
       box-shadow: 0 0 20px #f0578a; }
+  .swaps .sec:hover {
+    background: #393b43; }
 
 .exchanges {
   display: flex;
@@ -190,6 +303,14 @@ footer {
   width: 100%;
   height: 100%;
   background-color: #27282D; }
+  .exchanges h2 {
+    color: azure;
+    font-size: 55px;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    margin-top: 2%;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center; }
   .exchanges .wrapper {
     display: flex;
     flex-direction: row;
@@ -211,3 +332,79 @@ footer {
     transform: rotate(0deg) scale(1.2) translateY(10px);
     transition: .5s all ease;
     z-index: 400; }
+
+.explorers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.6fr 2.3fr;
+  background-color: #27282D;
+  grid-auto-flow: column;
+  grid-template-areas: "titulo titulo titulo titulo titulo" "pos1 pos2 pos3 pos4 pos5"; }
+  .explorers .titulo {
+    grid-area: titulo; }
+  .explorers .pos1 {
+    grid-area: pos1; }
+  .explorers .pos2 {
+    grid-area: pos2; }
+  .explorers .pos3 {
+    grid-area: pos3; }
+  .explorers .pos4 {
+    grid-area: pos4; }
+  .explorers .pos5 {
+    grid-area: pos5; }
+  .explorers h2 {
+    color: azure;
+    font-size: 55px;
+    letter-spacing: 10px;
+    word-spacing: 30px;
+    margin-top: 2%;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center; }
+  .explorers .card {
+    width: 15vw;
+    height: 27vw;
+    margin: 10%;
+    border-radius: 20px;
+    background-color: #27282D;
+    box-shadow: 0 0 15px cornsilk;
+    border-collapse: collapse; }
+    .explorers .card img {
+      border-radius: 20px;
+      width: 100%;
+      height: 50%; }
+    .explorers .card .cardBody {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      height: 50%;
+      font-family: 'Luckiest Guy', cursive;
+      color: azure; }
+      .explorers .card .cardBody h5 {
+        margin: 5%;
+        font-size: 18px;
+        letter-spacing: 3px; }
+      .explorers .card .cardBody p {
+        width: 12vw;
+        padding: 1%;
+        font-size: 20px;
+        letter-spacing: 4px; }
+      .explorers .card .cardBody a {
+        text-decoration: none;
+        color: azure;
+        width: 125px;
+        height: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px cornsilk;
+        border-collapse: collapse;
+        padding: 10px;
+        letter-spacing: 2px; }
+      .explorers .card .cardBody a:hover {
+        transform: scale(1.05);
+        background: #393b43;
+        box-shadow: 0 0 20px #f0578a; }
+  .explorers .card:hover {
+    transform: scale(1.05);
+    background: #393b43;
+    box-shadow: 0 0 20px #f0578a; }

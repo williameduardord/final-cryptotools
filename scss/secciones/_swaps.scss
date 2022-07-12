@@ -1,0 +1,93 @@
+.swaps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #27282D;
+    width: 100%;
+
+    & h2 {
+        color: azure;
+        font-size: 55px;
+        letter-spacing: 10px;
+        word-spacing: 30px;
+        font-family: 'Luckiest Guy', cursive;
+        margin: 2% 2% 2% 2%;
+    }
+
+
+        & .cards {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            & .card {
+                width: 15vw;
+                height: 31vw;
+                margin: 2% 2% 2% 2%;
+                border-radius: 20px;
+                background-color: #27282D;
+                box-shadow: 0 0 15px cornsilk;
+                border-collapse: collapse;
+
+                & img {
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 50%;
+                }
+
+                & .cardBody {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    text-align: center;
+                    height: 50%;
+                    font-family: 'Luckiest Guy', cursive;
+                    color: azure;
+                    
+                    & h5 {
+                        margin: 5%;
+                        font-size: 18px;
+                        letter-spacing: 3px;         
+                    }
+
+                    & p {
+                        width: 12vw;
+                        padding: 1%;
+                        font-size: 20px;
+                        letter-spacing: 4px;
+                        
+                    }
+
+                    & a {
+                        text-decoration: none;
+                        color: azure;
+                        width: 125px;
+                        height: 40px;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px cornsilk;
+                        border-collapse: collapse;
+                        padding: 10px;
+                        letter-spacing: 2px;
+                    }
+
+                    a:hover {
+                        transform: scale(1.05);
+                        background: #393b43;
+                        box-shadow: 0 0 20px rgb(240, 87, 138);
+                    }
+                }
+            }
+
+            .card:hover {
+                transform: scale(1.05);
+                background: #393b43;
+                box-shadow: 0 0 20px rgb(240, 87, 138);
+            }
+        }
+    
+
+    .sec:hover {
+        background: #393b43;
+    }
+}

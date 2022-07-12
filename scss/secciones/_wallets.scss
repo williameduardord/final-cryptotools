@@ -16,59 +16,82 @@
 
     & .sec {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
+        align-items: center;
 
-        & .card {
+        & .cards {
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-            font-family: 'Luckiest Guy', cursive;
-            color: azure;
-            letter-spacing: 2px;
-            width: 15vw;
-            margin: 2% 2% 2% 2%;
-            padding: 1%;
-            border-radius: 20px;
-            background-color: #27282D;
-            box-shadow: 0 0 15px cornsilk;
-            border-collapse: collapse;
+            flex-direction: row;
+            width: 100%;
 
-            & p {
-                width: 12vw;
-                font-size: 1.1vw;
-            }
-
-            & img {
+            & .card {
+                width: 15vw;
+                height: 25vw;
+                margin: 2% 2% 2% 2%;
                 border-radius: 20px;
-                width: 12vw;
-                height: 11vw;
-            }
-
-            & a {
-                text-decoration: none;
-                color: azure;
-                width: 125px;
-                height: 40px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px cornsilk;
+                background-color: #27282D;
+                box-shadow: 0 0 15px cornsilk;
                 border-collapse: collapse;
-                padding: 10px;
+
+                & img {
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 11vw;
+                }
+
+                & .cardBody {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    text-align: center;
+                    height: 50%;
+                    font-family: 'Luckiest Guy', cursive;
+                    color: azure;
+                    
+                    & h5 {
+                        margin: 5%;
+                        font-size: 18px;
+                        letter-spacing: 3px;         
+                    }
+
+                    & p {
+                        width: 12vw;
+                        padding: 1%;
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                        
+                    }
+
+                    & a {
+                        text-decoration: none;
+                        color: azure;
+                        width: 125px;
+                        height: 40px;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px cornsilk;
+                        border-collapse: collapse;
+                        padding: 10px;
+                    }
+
+                    a:hover {
+                        transform: scale(1.05);
+                        background: #393b43;
+                        box-shadow: 0 0 20px rgb(240, 87, 138);
+                    }
+                }
             }
 
-            a:hover {
+            .card:hover {
                 transform: scale(1.05);
                 background: #393b43;
                 box-shadow: 0 0 20px rgb(240, 87, 138);
             }
         }
+    }
 
-        .card:hover {
-            transform: scale(1.05);
-            background: #393b43;
-            box-shadow: 0 0 20px rgb(240, 87, 138);
-        }
+    .sec:hover {
+        background: #393b43;
     }
 }

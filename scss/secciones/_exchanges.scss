@@ -6,6 +6,16 @@
     height: 100%;
     background-color: #27282D;
 
+    & h2 {
+        color: azure;
+        font-size: 55px;
+        letter-spacing: 10px;
+        word-spacing: 30px;
+        margin-top: 2%;
+        font-family: 'Luckiest Guy', cursive;
+        text-align: center;
+    }
+
     & .wrapper {
         display: flex;
         flex-direction: row;
