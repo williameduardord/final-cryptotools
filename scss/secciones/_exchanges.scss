@@ -36,7 +36,7 @@
         border-radius: 20px;
     }
 
-    img:hover{
+    img:hover {
         box-shadow: 0 0 20px rgb(240, 87, 138);
     }
 
@@ -45,6 +45,35 @@
         transform: rotate(0deg) scale(1.2) translateY(10px);
         transition: .5s all ease;
         z-index: 400;
-        
+
+    }
+}
+
+/********* exchanges para 475px ***********/
+@media (max-width: 475px) {
+
+    .exchanges {
+        width: 100%;
+
+        & h2 {
+            font-size: 25px;
+            letter-spacing: 6px;
+            margin-top: 5%;
+        }
+
+        & .wrapper {
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            margin-left: 15%;
+
+           & .container {
+                width: 100%;
+
+                & img {
+                    width: 80%;
+                }
+            }
+        }
     }
 }

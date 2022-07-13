@@ -292,6 +292,42 @@ footer {
   .wallets .sec:hover {
     background: #393b43; }
 
+/*********** wallets para 475px **********/
+@media (max-width: 475px) {
+  .wallets h2 {
+    font-size: 25px;
+    letter-spacing: 4px;
+    word-spacing: 20px;
+    margin: 5%; }
+  .wallets .sec {
+    margin-bottom: 5%; }
+    .wallets .sec .cards {
+      flex-wrap: wrap;
+      justify-content: center; }
+      .wallets .sec .cards .card {
+        justify-content: space-between;
+        width: 40vw;
+        height: 300px; }
+        .wallets .sec .cards .card img {
+          border-radius: 20px;
+          width: 100%;
+          height: 150px; }
+        .wallets .sec .cards .card .cardBody {
+          height: 50%; }
+          .wallets .sec .cards .card .cardBody h5 {
+            margin: 5%;
+            font-size: 13px;
+            letter-spacing: 3px; }
+          .wallets .sec .cards .card .cardBody p {
+            width: 85%;
+            font-size: 12px;
+            letter-spacing: 1px; }
+          .wallets .sec .cards .card .cardBody a {
+            width: 100px;
+            height: 30px;
+            padding: 3px;
+            font-size: 15px; } }
+
 .swaps {
   display: flex;
   flex-direction: column;
@@ -361,6 +397,44 @@ footer {
   .swaps .sec:hover {
     background: #393b43; }
 
+@media (max-width: 475px) {
+  .swaps h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    word-spacing: 30px;
+    text-align: center;
+    margin: 5%; }
+  .swaps .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%; }
+    .swaps .cards .card {
+      width: 40vw;
+      height: 280px;
+      border-radius: 20px; }
+      .swaps .cards .card img {
+        width: 100%;
+        height: 150px; }
+      .swaps .cards .card .cardBody {
+        height: 50%; }
+        .swaps .cards .card .cardBody h5 {
+          margin: 5%;
+          font-size: 15px;
+          letter-spacing: 3px; }
+        .swaps .cards .card .cardBody p {
+          width: 80%;
+          font-size: 15px;
+          letter-spacing: 3px; }
+        .swaps .cards .card .cardBody a {
+          width: 125px;
+          height: 27px;
+          font-size: 15px;
+          padding: 3px;
+          letter-spacing: 2px;
+          margin-bottom: 5%; } }
+
 .exchanges {
   display: flex;
   flex-direction: column;
@@ -397,6 +471,24 @@ footer {
     transform: rotate(0deg) scale(1.2) translateY(10px);
     transition: .5s all ease;
     z-index: 400; }
+
+/********* exchanges para 475px ***********/
+@media (max-width: 475px) {
+  .exchanges {
+    width: 100%; }
+    .exchanges h2 {
+      font-size: 25px;
+      letter-spacing: 6px;
+      margin-top: 5%; }
+    .exchanges .wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 5%;
+      margin-left: 15%; }
+      .exchanges .wrapper .container {
+        width: 100%; }
+        .exchanges .wrapper .container img {
+          width: 80%; } }
 
 .explorers {
   display: grid;
@@ -473,3 +565,52 @@ footer {
     transform: scale(1.05);
     background: #393b43;
     box-shadow: 0 0 20px #f0578a; }
+
+/************ explorers para 475px *************/
+@media (max-width: 475px) {
+  .explorers {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background-color: #27282D;
+    grid-auto-flow: column;
+    grid-template-areas: "titulo titulo" "pos1 pos2" "pos3 pos4" "pos5 ."; }
+    .explorers .titulo {
+      grid-area: titulo; }
+    .explorers .pos1 {
+      grid-area: pos1; }
+    .explorers .pos2 {
+      grid-area: pos2; }
+    .explorers .pos3 {
+      grid-area: pos3; }
+    .explorers .pos4 {
+      grid-area: pos4; }
+    .explorers .pos5 {
+      grid-area: pos5; }
+    .explorers h2 {
+      font-size: 20px;
+      letter-spacing: 3px;
+      word-spacing: 5px;
+      margin-top: 5%; }
+    .explorers .card {
+      justify-content: space-between;
+      width: 40vw;
+      height: 270px;
+      margin-left: 7%; }
+      .explorers .card .cardBody {
+        height: auto; }
+        .explorers .card .cardBody h5 {
+          margin: 5%;
+          font-size: 15px;
+          letter-spacing: 3px; }
+        .explorers .card .cardBody p {
+          width: 40vw;
+          font-size: 15px;
+          letter-spacing: 4px; }
+        .explorers .card .cardBody a {
+          width: 100px;
+          height: 30px;
+          padding: 4px;
+          letter-spacing: 2px;
+          margin-bottom: 5%; } }

@@ -49,11 +49,11 @@
                     height: 50%;
                     font-family: 'Luckiest Guy', cursive;
                     color: azure;
-                    
+
                     & h5 {
                         margin: 5%;
                         font-size: 18px;
-                        letter-spacing: 3px;         
+                        letter-spacing: 3px;
                     }
 
                     & p {
@@ -61,7 +61,7 @@
                         padding: 1%;
                         font-size: 20px;
                         letter-spacing: 1px;
-                        
+
                     }
 
                     & a {
@@ -93,5 +93,63 @@
 
     .sec:hover {
         background: #393b43;
+    }
+}
+
+/*********** wallets para 475px **********/
+@media (max-width: 475px) {
+    .wallets {
+
+
+        & h2 {
+            font-size: 25px;
+            letter-spacing: 4px;
+            word-spacing: 20px;
+            margin: 5%;
+        }
+
+        & .sec {
+            margin-bottom: 5%;
+
+            & .cards {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                & .card {
+                    justify-content: space-between;
+                    width: 40vw;
+                    height: 300px;
+
+                    & img {
+                        border-radius: 20px;
+                        width: 100%;
+                        height: 150px;
+                    }
+
+                    & .cardBody {
+                        height: 50%;
+
+                        & h5 {
+                            margin: 5%;
+                            font-size: 13px;
+                            letter-spacing: 3px;
+                        }
+
+                        & p {
+                            width: 85%;
+                            font-size: 12px;
+                            letter-spacing: 1px;
+                        }
+
+                        & a {
+                            width: 100px;
+                            height: 30px;
+                            padding: 3px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
