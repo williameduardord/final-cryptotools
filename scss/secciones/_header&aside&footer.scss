@@ -2,7 +2,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1f2023;
+    background-color: $bgcolor1;
 
     & h1 {
         padding: 0.5%;
@@ -10,8 +10,8 @@ header {
         letter-spacing: 20px;
         width: 100vw;
         text-align: center;
-        color: azure;
-        font-family: 'Luckiest Guy', cursive;
+        color: $colortext;
+        font-family: $textFont;
         animation-name: animacionLogo;
         animation-duration: 10s;
         animation-iteration-count: infinite;
@@ -19,8 +19,8 @@ header {
 
     @keyframes animacionLogo {
         0% {
-            color: azure;
-            text-shadow: 0 0 20px rgb(240, 87, 138);
+            color: $colortext;
+            text-shadow:$hoverShadow20px;
         }
 
         25% {
@@ -29,8 +29,8 @@ header {
         }
 
         50% {
-            color: azure;
-            text-shadow: 0 0 20px rgb(240, 87, 138);
+            color: $colortext;
+            text-shadow:$hoverShadow20px;
         }
 
         75% {
@@ -40,8 +40,8 @@ header {
     }
 
     .menu a {
-        color: azure;
-        font-family: 'Luckiest Guy', cursive;
+        color: $colortext;
+        font-family: $textFont;
         font-size: 25px;
         letter-spacing: 5px;
     }
@@ -53,12 +53,12 @@ header {
     }
 
     .menu a:hover {
-        text-shadow: 0 0 20px rgb(240, 87, 138);
-        color: azure;
+        text-shadow:$hoverShadow20px;
+        color: $colortext;
     }
 
     .navbar-toggler:hover {
-        box-shadow: 0 0 20px rgb(240, 87, 138);
+        box-shadow:$hoverShadow20px;
     }
 }
 
@@ -68,10 +68,10 @@ aside {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #1f2023;
+    background-color: $bgcolor1;
 
     & .navbar-toggler:hover {
-        box-shadow: 0 0 20px rgb(240, 87, 138);
+        box-shadow:$hoverShadow20px;
     }
 
     & .collapse {
@@ -81,8 +81,8 @@ aside {
             width: 100%;
             padding: 1%;
             text-align: center;
-            color: azure;
-            font-family: 'Luckiest Guy', cursive;
+            color: $colortext;
+            font-family: $textFont;
             font-size: 35px;
             letter-spacing: 4px;
         }
@@ -103,8 +103,8 @@ aside {
                     padding: 1%;
 
                     text-align: center;
-                    color: azure;
-                    font-family: 'Luckiest Guy', cursive;
+                    color: $colortext;
+                    font-family: $textFont;
                     font-size: 20px;
                     letter-spacing: 4px;
                 }
@@ -117,7 +117,7 @@ aside {
 
             .asidevideo:hover {
                 transform: scale(1.2);
-                box-shadow: 0 0 20px rgb(240, 87, 138);
+                box-shadow:$hoverShadow20px;
             }
 
         }
@@ -132,12 +132,12 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #1f2023;
+    background-color: $bgcolor1;
     width: 100%;
 
     & p {
-        color: azure;
-        font-family: 'Luckiest Guy', cursive;
+        color: $colortext;
+        font-family: $textFont;
         font-size: 25px;
         letter-spacing: 3px;
         text-align: center;
@@ -158,7 +158,7 @@ footer {
 
         .mapa:hover {
             transform: scale(1.05);
-            box-shadow: 0 0 20px rgb(240, 87, 138);
+            box-shadow:$hoverShadow20px;
         }
     }
 
@@ -171,9 +171,9 @@ footer {
             border-collapse: collapse;
             margin: 20px;
             font-size: 35px;
-            color: azure;
+            color: $colortext;
             padding: 10px;
-            border: 1px azure solid;
+            border: 1px $colortext solid;
             border-radius: 50%;
         }
 
@@ -238,7 +238,7 @@ footer {
 
                 .asidevideo:hover {
                     transform: scale(1.2);
-                    box-shadow: 0 0 20px rgb(240, 87, 138);
+                    box-shadow:$hoverShadow20px;
                 }
             }
         }

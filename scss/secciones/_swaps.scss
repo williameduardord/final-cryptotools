@@ -2,15 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #27282D;
+    background-color: $bgcolor3;
     width: 100%;
 
     & h2 {
-        color: azure;
+        color:$colortext;
         font-size: 55px;
         letter-spacing: 10px;
         word-spacing: 30px;
-        font-family: 'Luckiest Guy', cursive;
+        font-family: $textFont;
         margin: 2% 2% 2% 2%;
     }
 
@@ -26,8 +26,8 @@
                 height: 31vw;
                 margin: 2% 2% 2% 2%;
                 border-radius: 20px;
-                background-color: #27282D;
-                box-shadow: 0 0 15px cornsilk;
+                background-color:$bgcolor3;
+                box-shadow:$shadow10px;
                 border-collapse: collapse;
 
                 & img {
@@ -43,8 +43,8 @@
                     align-items: center;
                     text-align: center;
                     height: 50%;
-                    font-family: 'Luckiest Guy', cursive;
-                    color: azure;
+                    font-family: $textFont;
+                    color: $colortext;
                     
                     & h5 {
                         margin: 5%;
@@ -62,11 +62,11 @@
 
                     & a {
                         text-decoration: none;
-                        color: azure;
+                        color:$colortext;
                         width: 125px;
                         height: 40px;
                         border-radius: 10px;
-                        box-shadow: 0 0 10px cornsilk;
+                        box-shadow:$shadow10px;
                         border-collapse: collapse;
                         padding: 10px;
                         letter-spacing: 2px;
@@ -74,16 +74,16 @@
 
                     a:hover {
                         transform: scale(1.05);
-                        background: #393b43;
-                        box-shadow: 0 0 20px rgb(240, 87, 138);
+                        background:$bgcolor2;
+                        box-shadow:$hoverShadow20px;
                     }
                 }
             }
 
             .card:hover {
                 transform: scale(1.05);
-                background: #393b43;
-                box-shadow: 0 0 20px rgb(240, 87, 138);
+                background: $bgcolor2;
+                box-shadow:$hoverShadow20px;
             }
         }
     

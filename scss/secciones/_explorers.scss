@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.6fr 2.3fr;
-    background-color: #27282D;
+    background-color: $bgcolor3;
     grid-auto-flow: column;
     grid-template-areas:
         "titulo titulo titulo titulo titulo"
@@ -34,12 +34,12 @@
     }
 
     & h2 {
-        color: azure;
+        color:$colortext;
         font-size: 55px;
         letter-spacing: 10px;
         word-spacing: 30px;
         margin-top: 2%;
-        font-family: 'Luckiest Guy', cursive;
+        font-family: $textFont;
         text-align: center;
     }
 
@@ -48,7 +48,7 @@
         height: 27vw;
         margin: 10%;
         border-radius: 20px;
-        background-color: #27282D;
+        background-color: $bgcolor1;
         box-shadow: 0 0 15px cornsilk;
         border-collapse: collapse;
 
@@ -65,8 +65,8 @@
             align-items: center;
             text-align: center;
             height: 50%;
-            font-family: 'Luckiest Guy', cursive;
-            color: azure;
+            font-family: $textFont;
+            color: $colortext;
 
             & h5 {
                 margin: 5%;
@@ -83,11 +83,11 @@
 
             & a {
                 text-decoration: none;
-                color: azure;
+                color:$colortext;
                 width: 125px;
                 height: 40px;
                 border-radius: 10px;
-                box-shadow: 0 0 10px cornsilk;
+                box-shadow:$shadow10px;
                 border-collapse: collapse;
                 padding: 10px;
                 letter-spacing: 2px;
@@ -95,16 +95,16 @@
 
             a:hover {
                 transform: scale(1.05);
-                background: #393b43;
-                box-shadow: 0 0 20px rgb(240, 87, 138);
+                background: $bgcolor2;
+                box-shadow:$hoverShadow20px;
             }
         }
     }
 
     .card:hover {
         transform: scale(1.05);
-        background: #393b43;
-        box-shadow: 0 0 20px rgb(240, 87, 138);
+        background: $bgcolor2;
+        box-shadow:$hoverShadow20px;
     }
 }
 

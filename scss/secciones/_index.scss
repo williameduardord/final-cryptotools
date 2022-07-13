@@ -4,7 +4,7 @@
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    background-color: #27282D;
+    background-color: $bgcolor3;
 
     & .carta {
         display: flex;
@@ -21,7 +21,7 @@
 
     .carta:hover {
         transform: scale(1.05);
-        background: #393b43;
+        background: $bgcolor2;
         box-shadow: 0 0 20px rgb(240, 87, 138);
     }
 
@@ -30,14 +30,14 @@
     }
 
     & .sec {
-        color: azure;
+        color: $colortext;
         margin: 5%;
         padding: 0.5%;
         font-size: 55px;
         letter-spacing: 20px;
         width: auto;
         text-align: center;
-        font-family: 'Luckiest Guy', cursive;
+        font-family: $textFont;
     }
 
     .sec:hover {

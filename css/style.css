@@ -4,6 +4,9 @@
   padding: 0;
   /*background-color: #27282D;*/ }
 
+/**********FONDOS**********/
+/**********SOMBREADOS**********/
+/**********TEXTOS**********/
 header {
   display: flex;
   flex-direction: column;
@@ -16,7 +19,7 @@ header {
     width: 100vw;
     text-align: center;
     color: azure;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     animation-name: animacionLogo;
     animation-duration: 10s;
     animation-iteration-count: infinite; }
@@ -36,7 +39,7 @@ header {
     text-shadow: none; } }
   header .menu a {
     color: azure;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     font-size: 25px;
     letter-spacing: 5px; }
   header a.nav-link.active {
@@ -63,7 +66,7 @@ aside {
       padding: 1%;
       text-align: center;
       color: azure;
-      font-family: 'Luckiest Guy', cursive;
+      font-family: "Luckiest Guy", cursive;
       font-size: 35px;
       letter-spacing: 4px; }
     aside .collapse .asideflex {
@@ -80,7 +83,7 @@ aside {
           padding: 1%;
           text-align: center;
           color: azure;
-          font-family: 'Luckiest Guy', cursive;
+          font-family: "Luckiest Guy", cursive;
           font-size: 20px;
           letter-spacing: 4px; }
         aside .collapse .asideflex .contenedor .asidevideo {
@@ -99,7 +102,7 @@ footer {
   width: 100%; }
   footer p {
     color: azure;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     font-size: 25px;
     letter-spacing: 3px;
     text-align: center; }
@@ -198,7 +201,7 @@ footer {
     letter-spacing: 20px;
     width: auto;
     text-align: center;
-    font-family: 'Luckiest Guy', cursive; }
+    font-family: "Luckiest Guy", cursive; }
   .inicio .sec:hover {
     color: #f0578a; }
 
@@ -231,7 +234,7 @@ footer {
     font-size: 55px;
     letter-spacing: 10px;
     word-spacing: 30px;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     margin: 2% 2% 2% 2%; }
   .wallets .sec {
     display: flex;
@@ -248,7 +251,7 @@ footer {
         margin: 2% 2% 2% 2%;
         border-radius: 20px;
         background-color: #27282D;
-        box-shadow: 0 0 15px cornsilk;
+        box-shadow: 0 0 10px cornsilk;
         border-collapse: collapse; }
         .wallets .sec .cards .card img {
           border-radius: 20px;
@@ -261,7 +264,7 @@ footer {
           align-items: center;
           text-align: center;
           height: 50%;
-          font-family: 'Luckiest Guy', cursive;
+          font-family: "Luckiest Guy", cursive;
           color: azure; }
           .wallets .sec .cards .card .cardBody h5 {
             margin: 5%;
@@ -339,7 +342,7 @@ footer {
     font-size: 55px;
     letter-spacing: 10px;
     word-spacing: 30px;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     margin: 2% 2% 2% 2%; }
   .swaps .cards {
     display: flex;
@@ -352,7 +355,7 @@ footer {
       margin: 2% 2% 2% 2%;
       border-radius: 20px;
       background-color: #27282D;
-      box-shadow: 0 0 15px cornsilk;
+      box-shadow: 0 0 10px cornsilk;
       border-collapse: collapse; }
       .swaps .cards .card img {
         border-radius: 20px;
@@ -365,7 +368,7 @@ footer {
         align-items: center;
         text-align: center;
         height: 50%;
-        font-family: 'Luckiest Guy', cursive;
+        font-family: "Luckiest Guy", cursive;
         color: azure; }
         .swaps .cards .card .cardBody h5 {
           margin: 5%;
@@ -448,7 +451,7 @@ footer {
     letter-spacing: 10px;
     word-spacing: 30px;
     margin-top: 2%;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     text-align: center; }
   .exchanges .wrapper {
     display: flex;
@@ -515,14 +518,14 @@ footer {
     letter-spacing: 10px;
     word-spacing: 30px;
     margin-top: 2%;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: "Luckiest Guy", cursive;
     text-align: center; }
   .explorers .card {
     width: 15vw;
     height: 27vw;
     margin: 10%;
     border-radius: 20px;
-    background-color: #27282D;
+    background-color: #1f2023;
     box-shadow: 0 0 15px cornsilk;
     border-collapse: collapse; }
     .explorers .card img {
@@ -536,7 +539,7 @@ footer {
       align-items: center;
       text-align: center;
       height: 50%;
-      font-family: 'Luckiest Guy', cursive;
+      font-family: "Luckiest Guy", cursive;
       color: azure; }
       .explorers .card .cardBody h5 {
         margin: 5%;
