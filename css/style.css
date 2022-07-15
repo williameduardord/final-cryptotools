@@ -526,7 +526,7 @@ footer {
     margin: 10%;
     border-radius: 20px;
     background-color: #1f2023;
-    box-shadow: 0 0 15px cornsilk;
+    box-shadow: 0 0 10px cornsilk;
     border-collapse: collapse; }
     .explorers .card img {
       border-radius: 20px;
